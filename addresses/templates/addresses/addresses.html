@@ -1,0 +1,25 @@
+{% extends "layout.html" %}
+{% load bootstrap3 %}
+{% block title %} Addresses | {{ page_title }}{% endblock %}
+{% block content %}
+	<div class="container">
+        <br><br>
+        <div class="row">
+            <div class="col-lg-6">
+                <h2>Shipping address</h2>
+                <h7>Will ship to the United States only</h7>
+                <br><br>
+                {% include 'partials/_addresses_detail.html' %}
+                {% if address %}
+                    <a href="{% url 'users:addresses' user.id %}">Clear the form for a new address</a>
+                {% endif %}
+            </div>
+            <div class="col-lg-4 ml-auto">
+                <br><br>
+                 <h4>your registered addresses</h4>
+                 {% include 'partials/_addresses_list.html' %}
+                 <a href="{% url 'users:profile' user.id %}"><h5>Go back to your profile</h5></a>
+            </div>
+        </div>
+	</div>
+{% endblock %}

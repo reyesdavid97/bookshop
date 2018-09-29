@@ -1,0 +1,386 @@
+/* @import url(https://fonts.googleapis.com/css?family=Montserrat:300,400,400i,500,700);
+
+html,
+body {
+    width: 100%;
+    height: 100%;
+}
+
+body {
+    font-family: 'Montserrat','Helvetica Neue',Arial,sans-serif;
+    color: #001A33;
+    webkit-tap-highlight-color: #222;
+    top:0;
+}
+
+body.modal-open {
+    padding-right:0 !important;
+}
+
+hr {
+    max-width: 120px;
+    border-width: 3px;
+    opacity: 0.8;
+    margin-top: 25px;
+    margin-bottom: 25px;
+}
+
+hr.light {
+    border-color: #fff;
+    opacity: 1;
+}
+
+hr.primary {
+    border-color: #000000;
+    opacity: 1;
+}
+
+a {
+    color: #000000;
+    -webkit-transition: all .35s;
+    -moz-transition: all .35s;
+    transition: all .35s;
+}
+
+a:hover,
+a:focus {
+    color: #222;
+    outline: 0;
+}
+
+p {
+    line-height: 1.7;
+    font-family:'Helvetica Neue',Arial,sans-serif;
+}
+
+.text-normal {
+    font-family:'Helvetica Neue',Arial,sans-serif;
+}
+
+.wide-space {
+    letter-spacing: 1.6px;
+}
+
+.bg-primary {
+    background-color: #000000;
+}
+
+.bg-alt {
+    background-color: #fff;
+}
+
+.text-faded {
+    color: rgba(245,245,245,0.7);
+}
+
+.text-dark {
+    color: #001A33;
+}
+
+.text-light {
+    color: #fff;
+}
+
+.text-light:hover,.text-light:focus {
+    color: #eee;
+    text-decoration:none;
+}
+
+.text-primary {
+    color: #000000;
+}
+
+
+#topNav {
+    background-color:#fff;
+    border-bottom: 1px solid #e2e2e2;
+    border-top: 4px solid #000000;
+}
+
+.navbar {
+    border-color: rgba(35,35,35,.05);
+    background-color: #fff;
+    -webkit-transition: all .4s;
+    -moz-transition: all .4s;
+    transition: all .4s;
+    font-weight: 500;
+}
+
+.navbar-brand {
+    color: #000000;
+    line-height: 1.90em;
+    font-weight: bold;
+    -webkit-transition: padding .2s ease-in;
+    -moz-transition: padding .2s ease-in;
+    transition: padding .2s ease-in;
+}
+
+.navbar-brand:hover,
+.navbar-brand:focus {
+    color: #000000;
+}
+
+.navbar .navbar-toggle:focus, .navbar-default .navbar-toggle:hover {
+    background-color: #001A33;
+}
+.navbar .navbar-toggle, .navbar-default .navbar-collapse {
+    border-color: transparent;
+}
+
+.navbar .navbar-nav > li>a,
+.navbar .navbar-nav>li>a:focus {
+    font-size: 12px;
+    color: #001A33;
+    text-transform: uppercase;
+}
+
+.navbar .navbar-nav>li>a:hover,
+.navbar .navbar-nav>li>a:focus:hover {
+    color: #000000;
+}
+
+.navbar .navbar-nav .nav-link.active,
+.navbar .navbar-nav .nav-link.active:focus {
+    color: #000000 !important;
+    background-color: transparent;
+}
+
+/* responsive nav */
+@media(max-width:48em) {
+    .navbar .navbar-nav>.nav-item {
+        float: none;
+        margin-left: .1rem;
+    }
+    .navbar .navbar-nav {
+        float:none !important;
+    }
+}
+
+@media(min-width:48em) {
+    .navbar {
+        border-color: transparent;
+        background-color: #fff;
+        min-height: 60px;
+    }
+
+    .navbar-brand {
+        color: #000000;
+        float: left;
+        padding-left: 1px;
+    }
+
+    .navbar .navbar-brand:hover,
+    .navbar .navbar-brand:focus {
+        color: #001A33;
+    }
+
+    .navbar .navbar-nav > li > a,
+    .navbar .navbar-nav> li > a:focus {
+        color: #001A33;
+        letter-spacing: 1.1px;
+    }
+
+    .navbar .navbar-nav > li > a:hover,
+    .navbar .navbar-nav > li > a:focus:hover {
+        color: #001A33;
+    }
+}
+
+.list-group-item, .card-footer {
+    background-color:transparent;
+}
+
+.btn.btn-primary {
+    background-color: transparent;
+    border:1px solid #000000;
+    -webkit-transition: all .35s;
+    -moz-transition: all .35s;
+    transition: all .35s;
+    color:#000000;
+}
+
+.btn.btn-primary:hover {
+    opacity: 0.7;
+}
+
+.btn-primary-outline {
+    border-color:#000000;
+    color:#000000;
+}
+.btn-primary-outline:hover {
+    background-color:#000000;
+}
+
+::-moz-selection {
+    text-shadow: none;
+    color: #fff;
+    background: #222;
+}
+
+::selection {
+    text-shadow: none;
+    color: #fff;
+    background: #222;
+}
+
+img::selection {
+    color: #fff;
+    background: 0 0;
+}
+
+img::-moz-selection {
+    color: #fff;
+    background: 0 0;
+}
+
+
+.book-item {
+
+}
+
+.book-item .details a.name {
+    color: #525252;
+}
+.book-item .details a.author {
+    font-size: .9em;
+}
+
+/* popup for image */
+/*popup has 900px and want it at center*/
+/*.col-sm-3{
+   width: 900px;
+   margin: auto;
+   text-align: center;
+}*/
+
+/*size of image*/
+.col-sm-3 img{
+   cursor: pointer;
+}
+
+.show{
+   z-index: 999;
+   display: none;
+}
+.show .overlay{  /*this is the popouter the outer space*/
+   width: 100%;
+   height: 100%;
+   background: rgba(0, 0, 0, 0.66);
+   position: absolute;
+   top: 0;
+   left: 0;
+}
+
+.show .img-show { /*this is the popinner the inner space*/
+   width: 400px;
+   height: auto;
+   background: #FFF;
+   position: absolute;
+   top: 50%;
+   left: 50%;
+   transform: translate(-50%,-50%);
+   border-radius: 6px 6px 6px 6px;
+   overflow: hidden
+}
+
+.show .img-show:after {
+    content: '';
+    padding-bottom: 150%;
+    display: block;
+}
+
+.img-show a {
+   position: absolute;
+   top: 10px;
+   right: 10px;
+   z-index: 99;
+}
+
+.img-show img{
+   width: 100%;
+   height: 100%;
+   position: absolute;
+   top: 0;
+   left: 0;
+}
+
+
+.tab-panels .panel {
+    display: none;
+}
+.tab-panels .panel.active{
+    display: block;
+}
+.tab-panels .panel > em{
+    white-space: pre-line;
+}
+
+.rating .star {
+    font-size: 1.1em;
+    color: gold;
+}
+
+.rating-input .star{
+    cursor: pointer;
+    display: inline-block;
+    font-size: 1.7em;
+}
+
+.price span {
+    font-size: 1.8em;
+    font-weight: bold;
+}
+
+.review .date {
+    font-size: .9em;
+}
+.review .no-comment {
+    color: #858585;
+}
+.review .comment {
+    white-space: pre-line;
+}
+
+.review-panel .btn {
+    cursor: pointer;
+}
+.review-panel .btn.disabled, 
+.review-panel .btn:disabled {
+    cursor: not-allowed;
+}
+
+
+.img-button a{
+    text-align: center;
+    border: solid 2px white;
+    z-index: 1;
+}
+
+.container:hover .img-button {
+    opacity: 1;
+}
+
+.img-button {
+    position: absolute;
+    width: 50px;
+    left:0%;
+    top: 0%;
+    text-align: center;
+    opacity: 0;
+    transition: opacity .35s ease;
+}
+
+.cc-icon{
+    padding-left: 15px;
+}
+
+
+footer {
+    position: relative;
+    margin-top: -20px; 
+    height: 20px;
+    clear:both;
+    line-height: 20px; 
+    border-top: 4px solid #000000;
+} 
+

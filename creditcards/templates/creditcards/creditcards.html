@@ -1,0 +1,31 @@
+{% extends "layout.html" %}
+{% load bootstrap3 %}
+{% load static %}
+{% block title %} Credit card | {{ page_title }}{% endblock %}
+{% block content %}
+	<div class="container">
+        <br><br>
+        <div class="row">
+            <div class="col-md-6">
+                <h2>Credit card information</h2>
+                {% include 'partials/_creditcards_detail.html' %}
+                <div id="icons" class="row">
+                    <img id="visa" class="cc-icon" src="{% static 'img/visa_g.png' %}" alt="VSA">
+                    <img id="mastercard" class="cc-icon" src="{% static 'img/mastercard_g.png' %}" alt="MC">
+                    <img id="aexpress" class="cc-icon" src="{% static 'img/aexpress_g.png' %}" alt="AE">
+                    <img id="discover" class="cc-icon" src="{% static 'img/discover_g.png' %}" alt="DIS">
+                </div>
+                {% if creditcard %}
+                    <a href="{% url 'users:creditcards' user.id %}">Clear the form for a new credit card</a>
+                {% endif %}
+            </div>
+            <div class="col-md-4 ml-auto">
+                <br><br>
+                 <h4>your credit cards</h4>
+                 {% include 'partials/_creditcards_list.html' %}
+                 <a href="{% url 'users:profile' user.id %}"><h5>Go back to your profile</h5></a>
+            </div>
+        </div>
+    </div>
+    <script src="{% static 'js/creditcard.js' %}"></script>
+{% endblock %}

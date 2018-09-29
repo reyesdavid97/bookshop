@@ -1,17 +1,5 @@
-# book-shop
+# Bookmart
 
-This is the software engineering project for Fall 2018. The goal is to make a book store that lists, organizes, and allows the purchase of books while having a good customer experience. (We hope)
-
-## Environment Setup
-
-Make sure you activate the virtualenv, we are using Python 3.7
-
-Then install Django
-
-`pip install Django`
-
-
-## Starting the server 
 To run, make sure you have python and django installed. Then run the database migrations with
 ```
 python manage.py migrate

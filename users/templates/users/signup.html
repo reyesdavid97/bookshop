@@ -1,0 +1,20 @@
+{% extends "layout.html" %}
+{% load bootstrap3 %}
+{% block title %}Register you new account {{ block.super}}{% endblock %}
+{% block content %}
+<div class="container text-center">
+    <div class="row justify-content-lg-center">
+        <div class="">
+            <h2>Register your new account</h2>
+            <br>
+            <form method="POST">
+                {% bootstrap_form form %}
+                {% csrf_token %}
+                <div class="form-group">
+                    <input class="btn btn-block btn-lg btn-success submit" type="submit" value="Register">
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+{% endblock %}

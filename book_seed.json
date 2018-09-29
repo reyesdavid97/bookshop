@@ -1,0 +1,607 @@
+[       {
+        "model": "books.genre",
+        "pk": 1,
+        "fields": {
+            "name": "Fantasy"
+        }
+    },
+    {
+        "model": "books.genre",
+        "pk": 2,
+        "fields": {
+            "name": "Classics"
+        }
+    },
+    {
+        "model": "books.genre",
+        "pk": 3,
+        "fields": {
+            "name": "Horror"
+        }
+    },
+    {
+        "model": "books.genre",
+        "pk": 4,
+        "fields": {
+            "name": "Mystery"
+        }
+    },
+    {
+        "model": "books.genre",
+        "pk": 5,
+        "fields": {
+            "name": "Romance"
+        }
+    },
+    {
+        "model": "books.genre",
+        "pk": 6,
+        "fields": {
+            "name": "Drama"
+        }
+    },
+    {
+        "model": "books.genre",
+        "pk": 7,
+        "fields": {
+            "name": "Children's"
+        }
+    },
+    {
+        "model": "books.genre",
+        "pk": 8,
+        "fields": {
+            "name": "Non-Fiction"
+        }
+    },
+    {
+        "model": "books.genre",
+        "pk": 9,
+        "fields": {
+            "name": "Science Fiction"
+        }
+    },
+    {
+        "model": "books.genre",
+        "pk": 10,
+        "fields": {
+            "name": "Fiction"
+        }
+    },
+    {
+        "model": "books.genre",
+        "pk": 11,
+        "fields": {
+            "name": "Thriller"
+        }
+    },
+    {
+        "model": "books.genre",
+        "pk": 12,
+        "fields": {
+            "name": "Novels"
+        }
+    },
+    {
+        "model": "books.genre",
+        "pk": 13,
+        "fields": {
+            "name": "Suspense"
+        }
+    },
+    {
+        "model": "books.genre",
+        "pk": 14,
+        "fields": {
+            "name": "Action and Adventure"
+        }
+    },
+    {
+        "model": "books.genre",
+        "pk": 15,
+        "fields": {
+            "name": "Biographies"
+        }
+    },
+    {
+        "model": "books.genre",
+        "pk": 15,
+        "fields": {
+            "name": "Autobiographies"
+        }
+    },
+    {
+        "model": "books.author",
+        "pk": 1,
+        "fields": {
+            "name": "Stephen King",
+            "bio": "Stephen King is the author of more than fifty books, all of them worldwide bestsellers. His recent work includes The Bill Hodges Trilogy, Revival, and Doctor Sleep. His novel 11/22/63 was named a top ten book of 2011 by The New York Times Book Review and won the Los Angeles Times Book Prize for Mystery/Thriller as well as the Best Hardcover Book Award from the International Thriller Writers Association. He is the recipient of the 2003 National Book Foundation Medal for Distinguished Contribution to American Letters. He lives in Bangor, Maine, with his wife, novelist Tabitha King."
+        }
+    },
+    {
+        "model": "books.author",
+        "pk": 2,
+        "fields": {
+            "name": "F. Scott Fitzgerald",
+            "bio": "F. Scott Fitzgerald was one of the major American writers of the twentieth century -- a figure whose life and works embodied powerful myths about our national dreams and aspirations. Fitzgerald was talented and perceptive, gifted with a lyrical style and a pitch-perfect ear for language. He lived his life as a romantic, equally capable of great dedication to his craft and reckless squandering of his artistic capital."
+        }
+    },
+    {
+        "model": "books.author",
+        "pk": 3,
+        "fields": {
+            "name": "Chuck Palahniuk",
+            "bio": "Chuck Palahniuk's novels are the bestselling Fight Club, which was made into a film by director David Fincher, Diary, Lullaby, Survivor, Haunted, and Invisible Monsters. Portions of Choke have appeared in Playboy, and Palahniuk's nonfiction work has been published by Gear, Black Book, The Stranger, and the Los Angeles Times. He lives in the Pacific Northwest."
+        }
+    },
+    {
+        "model": "books.author",
+        "pk": 4,
+        "fields": {
+            "name": "George R.R. Martin",
+            "bio": "George R.R. Martin sold his first story in 1971 and has been writing professionally since then. He spent ten years in Hollywood as a writer-producer, working on The Twilight Zone, Beauty and the Beast, and various feature films and television pilots that were never made. In the mid \u201890s he returned to prose, his first love, and began work on his epic fantasy series, A Song of Ice and Fire. He has been in the Seven Kingdoms ever since. Whenever he\u2019s allowed to leave, he returns to Santa Fe, New Mexico, where he lives with the lovely Parris, and two cats named Augustus and Caligula, who think they run the place."
+        }
+    },
+    {
+        "model": "books.author",
+        "pk": 5,
+        "fields": {
+            "name": "J. R. R. Tolkien",
+            "bio": "J.R.R. Tolkien (1892.1973), beloved throughout the world as the creator of The Hobbit and The Lord of the Rings, was a professor of Anglo-Saxon at Oxford, a fellow of Pembroke College, and a fellow of Merton College until his retirement in 1959. His chief interest was the linguistic aspects of the early English written tradition, but even as he studied these classics he was creating a set of his own."
+        }
+    },
+    {
+        "model": "books.author",
+        "pk": 6,
+        "fields": {
+            "name": "George Orwell",
+            "bio": "GEORGE ORWELL (1903-1950) was born in India and served with the Imperial Police in Burma before joining the Republican Army in the Spanish Civil War. Orwell was the author of six novels as well as numerous essays and nonfiction works."
+        }
+    },
+    {
+        "model": "books.author",
+        "pk": 7,
+        "fields": {
+            "name": "J. K. Rowling",
+            "bio": "J K (Joanne Kathleen) Rowling was born in the summer of 1965 at Yate General Hospital in England and grew up in Chepstow, Gwent where she went to Wyedean Comprehensive. Jo left Chepstow for Exeter University, where she earned a French and Classics degree, and where her course included one year in Paris. As a postgraduate she moved to London to work at Amnesty International, doing research into human rights abuses in Francophone Africa. She started writing the Harry Potter series during a Manchester to London King's Cross train journey, and during the next five years, outlined the plots for each book and began writing the first novel. Jo then moved to northern Portugal, where she taught English as a foreign language."
+        }
+    },
+    {
+        "model": "books.author",
+        "pk": 8,
+        "fields": {
+            "name": "Harper Lee",
+            "bio": "Harper Lee, known as Nelle, was born in the Alabama town of Monroeville, the youngest of four children of Amasa Coleman Lee and Frances Cunningham Finch Lee. Her father, a former newspaper editor and proprietor, was a lawyer who served on the state legislature from 1926 to 1938. As a child, Lee was a tomboy and a precocious reader, and enjoyed the friendship of her schoolmate and neighbor, the young Truman Capote."
+        }
+    },
+    {
+        "model": "books.author",
+        "pk": 9,
+        "fields": {
+            "name": "Dan Brown",
+            "bio": "DAN BROWN is the author of numerous #1 international bestsellers, including The Da Vinci Code, Inferno, The Lost Symbol, Angels & Demons, Deception Point, and Digital Fortress."
+        }
+    },
+    {
+        "model": "books.book",
+        "pk": 1,
+        "fields": {
+            "title": "To Kill a Mockingbird",
+            "cover_url": "covers/to-kill-a-mockingbird.jpg",
+            "description": "The unforgettable novel of a childhood in a sleepy Southern town and the crisis of conscience that rocked it, To Kill A Mockingbird became both an instant bestseller and a critical success when it was first published in 1960. It went on to win the Pulitzer Prize in 1961 and was later made into an Academy Award-winning film, also a classic.",
+            "genre": [ 2 ],
+            "price": 10.99,
+            "publisher": "Harper Perennial Modern Classics",
+            "release_date": "2003-05-23T16:00:00Z",
+            "author": [ 8 ]
+        }
+    },
+    {
+        "model": "books.book",
+        "pk": 2,
+        "fields": {
+            "title": "It",
+            "cover_url": "covers/sk-it.jpeg",
+            "description": "Stephen King\u2019s terrifying, classic #1 New York Times bestseller, \u201ca landmark in American literature\u201d (Chicago Sun-Times)\u2014about seven adults who return to their hometown to confront a nightmare they had first stumbled on as teenagers\u2026an evil without a name: It.\r\n\r\nWelcome to Derry, Maine. It\u2019s a small city, a place as hauntingly familiar as your own hometown. Only in Derry the haunting is real.\r\n\r\nThey were seven teenagers when they first stumbled upon the horror. Now they are grown-up men and women who have gone out into the big world to gain success and happiness. But the promise they made twenty-eight years ago calls them reunite in the same place where, as teenagers, they battled an evil creature that preyed on the city\u2019s children. Now, children are being murdered again and their repressed memories of that terrifying summer return as they prepare to once again battle the monster lurking in Derry\u2019s sewers.",
+            "genre": [ 3 ],
+            "price": 11.99,
+            "publisher": "Scribner",
+            "release_date": "2016-01-01T17:37:05Z",
+            "author": [ 1 ]
+        }
+    },
+    {
+        "model": "books.book",
+        "pk": 3,
+        "fields": {
+            "title": "Dark Tower",
+            "cover_url": "covers/sk-dark-tower.jpeg",
+            "description": "Some description",
+            "genre": [ 1 ],
+            "price": 12.99,
+            "publisher": "Anchor",
+            "release_date": "2017-10-11T16:00:00Z",
+            "author": [ 1 ]
+        }
+    },
+    {
+        "model": "books.book",
+        "pk": 4,
+        "fields": {
+            "title": "Origin",
+            "cover_url": "covers/origin.jpg",
+            "description": "Robert Langdon, Harvard professor of symbology and religious iconology, arrives at the ultramodern Guggenheim Museum Bilbao to attend a major announcement\u2014the unveiling of a discovery that \u201cwill change the face of science forever.\u201d The evening\u2019s host is Edmond Kirsch, a forty-year-old billionaire and futurist whose dazzling high-tech inventions and audacious predictions have made him a renowned global figure. Kirsch, who was one of Langdon\u2019s first students at Harvard two decades earlier, is about to reveal an astonishing breakthrough . . . one that will answer two of the fundamental questions of human existence.",
+            "genre": [ 10 ],
+            "price": 17.97,
+            "publisher": "Knopf Doubleday Publishing Group",
+            "release_date": "2017-10-03T22:00:00Z",
+            "author": [ 9 ]
+        }
+    },
+    {
+        "model": "books.book",
+        "pk": 5,
+        "fields": {
+            "title": "Gwendy's Button Box",
+            "cover_url": "covers/sk-gwendys.jpg",
+            "description": "Stephen King teams up with long-time friend and award-winning author Richard Chizmar for the first time in this original, chilling novella that revisits the mysterious town of Castle Rock.\r\nThere are three ways up to Castle View from the town of Castle Rock: Route 117, Pleasant Road, and the Suicide Stairs. Every day in the summer of 1974, twelve-year-old Gwendy Peterson has taken the stairs, which are held by strong\u2014if time-rusted\u2014iron bolts and zig-zag up the precarious cliffside.",
+            "genre": [ 3 ],
+            "price": 17.14,
+            "publisher": "Cemetery Dance Publications",
+            "release_date": "2017-05-16T16:00:00Z",
+            "author": [ 1 ]
+        }
+    },
+    {
+        "model": "books.book",
+        "pk": 6,
+        "fields": {
+            "title": "Sleeping Beauties",
+            "cover_url": "covers/sk-sleeping.jpeg",
+            "description": "In this spectacular father/son collaboration, Stephen King and Owen King tell the highest of high-stakes stories: what might happen if women disappeared from the world of men?\r\n\r\nIn a future so real and near it might be now, something happens when women go to sleep: they become shrouded in a cocoon-like gauze. If they are awakened, if the gauze wrapping their bodies is disturbed or violated, the women become feral and spectacularly violent. And while they sleep they go to another place, a better place, where harmony prevails and conflict is rare.",
+            "genre": [ 13 ],
+            "price": 19.49,
+            "publisher": "Scribner",
+            "release_date": "2017-09-26T04:00:00Z",
+            "author": [ 1 ]
+        }
+    },
+    {
+        "model": "books.book",
+        "pk": 7,
+        "fields": {
+            "title": "The Shining",
+            "cover_url": "covers/sk-the-shining.jpg",
+            "description": "Jack Torrance\u2019s new job at the Overlook Hotel is the perfect chance for a fresh start. As the off-season caretaker at the atmospheric old hotel, he\u2019ll have plenty of time to spend reconnecting with his family and working on his writing. But as the harsh winter weather sets in, the idyllic location feels ever more remote . . . and more sinister. And the only one to notice the strange and terrible forces gathering around the Overlook is Danny Torrance, a uniquely gifted five-year-old",
+            "genre": [ 3 ],
+            "price": 13.6,
+            "publisher": "Knopf Doubleday Publishing Group",
+            "release_date": "2013-08-27T10:00:00Z",
+            "author": [ 1 ]
+        }
+    },
+    {
+        "model": "books.book",
+        "pk": 8,
+        "fields": {
+            "title": "Angels and Demons",
+            "cover_url": "covers/angels-and-demons.jpg",
+            "description": "An ancient secret brotherhood. \r\n\r\nA devastating new weapon of destruction. \r\n\r\nAn unthinkable target. \r\n\r\nWhen world-renowned Harvard symbologist Robert Langdon is summoned to a Swiss research facility to analyze a mysterious symbol -- seared into the chest of a murdered physicist -- he discovers evidence of the unimaginable: the resurgence of an ancient secret brotherhood known as the Illuminati...the most powerful underground organization ever to walk the earth. The Illuminati has now surfaced to carry out the final phase of its legendary vendetta against its most hated enemy -- the Catholic Church",
+            "genre": [ 10 ],
+            "price": 8.79,
+            "publisher": "Pocket Books",
+            "release_date": "2009-03-31T22:00:00Z",
+            "author": [ 9 ]
+        }
+    },
+    {
+        "model": "books.book",
+        "pk": 9,
+        "fields": {
+            "title": "Deception Point",
+            "cover_url": "covers/deception-point.jpg",
+            "description": "From the #1 New York Times bestselling author of The Da Vinci Code, Angels & Demons, and Inferno\u2014now a major film directed by Ron Howard and starring Tom Hanks and Felicity Jones\u2014comes a lightning-fast thriller about an astonishing NASA discovery that uncovers a vicious conspiracy leading all the way to the White House.\r\n\r\nA shocking scientific discovery. A conspiracy of staggering brilliance. A thriller unlike any you've ever read...\r\n\r\nWhen a NASA satellite discovers an astonishingly rare object buried deep in the Arctic ice, the floundering space agency proclaims a much-needed victory\u2014a victory with profound implications for NASA policy and the impending presidential election. To verify the authenticity of the find, the White House calls upon the skills of intelligence analyst Rachel Sexton. Accompanied by a team of experts, including the charismatic scholar Michael Tolland, Rachel travels to the Arctic and uncovers the unthinkable: evidence of scientific trickery\u2014a bold deception that threatens to plunge the world into controversy. But before she can warn the president, Rachel and Michael are ambushed by a team of assassins. Fleeing for their lives across a desolate and lethal landscape, their only hope for survival is to discover who is behind this masterful plot. The truth, they will learn, is the most shocking deception of all",
+            "genre": [ 11 ],
+            "price": 7.94,
+            "publisher": "Pocket Books",
+            "release_date": "2017-03-28T16:00:00Z",
+            "author": [ 9 ]
+        }
+    },
+    {
+        "model": "books.book",
+        "pk": 10,
+        "fields": {
+            "title": "Lost Symbol",
+            "cover_url": "covers/lost-symbol.jpg",
+            "description": "Famed Harvard symbologist Robert Langdon answers an unexpected summons to appear at the U.S. Capitol Building. His planned lecture is interrupted when a disturbing object\u2014artfully encoded with five symbols\u2014is discovered in the building. Langdon recognizes in the find an ancient invitation into a lost world of esoteric, potentially dangerous wisdom. When his mentor Peter Solomon\u2014a longstanding Mason and beloved philanthropist\u2014is kidnapped, Langdon realizes that the only way to save Solomon is to accept the mystical invitation and plunge headlong into a clandestine world of Masonic secrets, hidden history, and one inconceivable truth . . . all under the watchful eye of Dan Brown's most terrifying villain to date. Set within the hidden chambers, tunnels, and temples of Washington, D.C., The Lost Symbol is an intelligent, lightning-paced story with surprises at every turn\u2014Brown's most exciting novel yet.",
+            "genre": [ 4 ],
+            "price": 9.99,
+            "publisher": "Knopf Doubleday Publishing Group",
+            "release_date": "2010-10-19T22:00:00Z",
+            "author": [ 9 ]
+        }
+    },
+    {
+        "model": "books.book",
+        "pk": 11,
+        "fields": {
+            "title": "Go Set a Watchman",
+            "cover_url": "covers/go-set-watchman.jpg",
+            "description": "\u201cGo Set a Watchman is such an important book, perhaps the most important novel on race to come out of the white South in decades\u2026\r\n   \u2014 New York Times (Opinion Pages)\r\n\r\nA landmark novel by Harper Lee, set two decades after her beloved Pulitzer Prize\u2013winning masterpiece, To Kill a Mockingbird.\r\n\r\nTwenty-six-year-old Jean Louise Finch\u2014\u201cScout\u201d\u2014returns home to Maycomb, Alabama from New York City to visit her aging father, Atticus. Set against the backdrop of the civil rights tensions and political turmoil that were transforming the South, Jean Louise\u2019s homecoming turns bittersweet when she learns disturbing truths about her close-knit family, the town, and the people dearest to her. Memories from her childhood flood back, and her values and assumptions are thrown into doubt. Featuring many of the iconic characters from To Kill a Mockingbird, Go Set a Watchman perfectly captures a young woman, and a world, in painful yet necessary transition out of the illusions of the past\u2014a journey that can only be guided by one\u2019s own conscience.",
+            "genre": [ 10 ],
+            "price": 13.28,
+            "publisher": "HarperCollins Publishers",
+            "release_date": "2016-05-03T04:00:00Z",
+            "author": [ 8 ]
+        }
+    },
+    {
+        "model": "books.book",
+        "pk": 12,
+        "fields": {
+            "title": "Harry  Potter and the Prisoner of Azkaban",
+            "cover_url": "covers/potter-prisoner-azkaban.jpg",
+            "description": "Harry Potter and the Prisoner of Azkaban: The Illustrated Edition (Harry Potter Series #3) by J. K. Rowling, Jim Kay\r\n\r\nFor twelve long years, the dread fortress of Azkaban held an infamous prisoner named Sirius Black. Convicted of killing thirteen people with a single curse, he was said to be the heir apparent to the Dark Lord, Voldemort.\r\n\r\nNow he has escaped, leaving only two clues as to where he might be headed: Harry Potter's defeat of You-Know-Who was Black's downfall as well. And the Azkaban guards heard Black muttering in his sleep, \"He's at Hogwarts . . . he's at Hogwarts.\"\r\n\r\nHarry Potter isn't safe, not even within the walls of his magical school, surrounded by his friends. Because on top of it all, there may well be a traitor in their midst.",
+            "genre": [ 1 ],
+            "price": 25.0,
+            "publisher": "Scholastic, Inc.",
+            "release_date": "2017-10-03T22:00:00Z",
+            "author": [ 7 ]
+        }
+    },
+    {
+        "model": "books.book",
+        "pk": 13,
+        "fields": {
+            "title": "Harry Potter and the Chamber of Secrets",
+            "cover_url": "covers/potter-chamber-secrets.jpg",
+            "description": "The Dursleys were so mean and hideous that summer that all Harry Potter wanted was to get back to the Hogwarts School for Witchcraft and Wizardry. But just as he's packing his bags, Harry receives a warning from a strange, impish creature named Dobby who says that if Harry Potter returns to Hogwarts, disaster will strike.\r\n\r\nAnd strike it does. For in Harry's second year at Hogwarts, fresh torments and horrors arise, including an outrageously stuck-up new professor, Gilderoy Lockhart, a spirit named Moaning Myrtle who haunts the girls' bathroom, and the unwanted attentions of Ron Weasley's younger sister, Ginny.\r\n\r\nBut each of these seem minor annoyances when the real trouble begins, and someone -- or something -- starts turning Hogwarts students to stone. Could it be Draco Malfoy, a more poisonous rival than ever? Could it possibly be Hagrid, whose mysterious past is finally told? Or could it be the one everyone at Hogwarts most suspects... Harry Potter himself?",
+            "genre": [ 1 ],
+            "price": 33.1,
+            "publisher": "Scholastic, Inc.",
+            "release_date": "2016-10-04T10:00:00Z",
+            "author": [ 7 ]
+        }
+    },
+    {
+        "model": "books.book",
+        "pk": 14,
+        "fields": {
+            "title": "Harry  Potter and the Sorcerer's Stone",
+            "cover_url": "covers/potter-sorcerer's-stone.jpg",
+            "description": "Shortlisted for the 2017 CILIP Kate Greenaway Medal\r\n\r\nFor the first time, J.K. Rowling's beloved Harry Potter books will be presented in lavishly illustrated full-color editions. Kate Greenaway-award-winning artist Jim Kay has created over 100 stunning illustrations, making this deluxe format a perfect gift as much for a child being introduced to the series, as for the dedicated fan.\r\n  \r\n Harry Potter has never been the star of a Quidditch team, scoring points while riding a broom far above the ground. He knows no spells, has never helped to hatch a dragon, and has never worn a cloak of invisibility.\r\n  \r\n All he knows is a miserable life with the Dursleys, his horrible aunt and uncle, and their abominable son, Dudley\u2014a great big swollen spoiled bully. Harry's room is a tiny closet at the foot of the stairs, and he hasn't had a birthday party in eleven years.\r\n  \r\n But all that is about to change when a mysterious letter arrives by owl messenger: a letter with an invitation to an incredible place that Harry\u2014and anyone who reads about him\u2014will find unforgettable",
+            "genre": [ 1 ],
+            "price": 29.06,
+            "publisher": "Scholastic, Inc.",
+            "release_date": "2015-10-06T16:00:00Z",
+            "author": [ 7 ]
+        }
+    },
+    {
+        "model": "books.book",
+        "pk": 15,
+        "fields": {
+            "title": "Home to Catalonia",
+            "cover_url": "covers/homage-to-catalonia.jpg",
+            "description": "In 1936 Orwell went to Spain to report on the Civil War and instead joined the fight against the Fascists. This famous account describes the war and Orwell\u2019s experiences. Introduction by Lionel Trilling, foreword by Adam Hochschild.",
+            "genre": [ 8 ],
+            "price": 12.71,
+            "publisher": "Houghton Mifflin Harcourt",
+            "release_date": "2015-05-19T22:00:00Z",
+            "author": [ 6 ]
+        }
+    },
+    {
+        "model": "books.book",
+        "pk": 16,
+        "fields": {
+            "title": "The Great Gastby",
+            "cover_url": "covers/the-great-gatsby.jpg",
+            "description": "The Great Gatsby, F. Scott Fitzgerald\u2019s third book, stands as the supreme achievement of his career. This exemplary novel of the Jazz Age has been acclaimed by generations of readers.\r\n\r\nThe Great Gatsby, F. Scott Fitzgerald\u2019s third book, stands as the supreme achievement of his career. This exemplary novel of the Jazz Age has been acclaimed by generations of readers. The story of the fabulously wealthy Jay Gatsby and his love for the beautiful Daisy Buchanan, of lavish parties on Long Island at a time when The New York Times noted \u201cgin was the national drink and sex the national obsession,\u201d it is an exquisitely crafted tale of America in the 1920s.",
+            "genre": [ 12 ],
+            "price": 10.07,
+            "publisher": "Scribner",
+            "release_date": "2004-09-30T16:00:00Z",
+            "author": [ 2 ]
+        }
+    },
+    {
+        "model": "books.book",
+        "pk": 17,
+        "fields": {
+            "title": "Game of Thrones",
+            "cover_url": "covers/game-of-thrones.jpg",
+            "description": "NOW THE ACCLAIMED HBO SERIES GAME OF THRONES\r\n\r\nFrom a master of contemporary fantasy comes the first novel of a landmark series unlike any you\u2019ve ever read before. With A Game of Thrones, George R. R. Martin has launched a genuine masterpiece, bringing together the best the genre has to offer. Mystery, intrigue, romance, and adventure fill the pages of this magnificent saga, the first volume in an epic series sure to delight fantasy fans everywhere.\r\n \r\nA GAME OF THRONES",
+            "genre": [ 1 ],
+            "price": 11.29,
+            "publisher": "Random House Publishing Group",
+            "release_date": "2011-03-22T04:00:00Z",
+            "author": [ 4 ]
+        }
+    },
+    {
+        "model": "books.book",
+        "pk": 18,
+        "fields": {
+            "title": "A Storm of Swords",
+            "cover_url": "covers/storm-of-swords.jpg",
+            "description": "THE BOOK BEHIND THE THIRD SEASON OF GAME OF THRONES, AN ORIGINAL SERIES NOW ON HBO.\r\n\r\nHere is the third volume in George R. R. Martin\u2019s magnificent cycle of novels that includes A Game of Thrones and A Clash of Kings. As a whole, this series comprises a genuine masterpiece of modern fantasy, bringing together the best the genre has to offer. Magic, mystery, intrigue, romance, and adventure fill these pages and transport us to a world unlike any we have ever experienced. Already hailed as a classic, George R. R. Martin\u2019s stunning series is destined to stand as one of the great achievements of imaginative fiction.\r\n\r\nA STORM OF SWORDS",
+            "genre": [ 1 ],
+            "price": 12.27,
+            "publisher": "Random House Publishing Group",
+            "release_date": "2002-05-28T16:00:00Z",
+            "author": [ 4 ]
+        }
+    },
+    {
+        "model": "books.book",
+        "pk": 19,
+        "fields": {
+            "title": "A Dance with Dragons",
+            "cover_url": "covers/dance-with-dragons.jpg",
+            "description": "In the aftermath of a colossal battle, the future of the Seven Kingdoms hangs in the balance\u2014beset by newly emerging threats from every direction. In the east, Daenerys Targaryen, the last scion of House Targaryen, rules with her three dragons as queen of a city built on dust and death. But Daenerys has thousands of enemies, and many have set out to find her. As they gather, one young man embarks upon his own quest for the queen, with an entirely different goal in mind.\r\n\r\nFleeing from Westeros with a price on his head, Tyrion Lannister, too, is making his way to Daenerys. But his newest allies in this quest are not the rag-tag band they seem, and at their heart lies one who could undo Daenerys\u2019s claim to Westeros forever.\r\n\r\nMeanwhile, to the north lies the mammoth Wall of ice and stone\u2014a structure only as strong as those guarding it. There, Jon Snow, 998th Lord Commander of the Night\u2019s Watch, will face his greatest challenge. For he has powerful foes not only within the Watch but also beyond, in the land of the creatures of ice.",
+            "genre": [ 1 ],
+            "price": 11.07,
+            "publisher": "Random House Publishing Group",
+            "release_date": "2013-10-29T16:00:00Z",
+            "author": [ 4 ]
+        }
+    },
+    {
+        "model": "books.book",
+        "pk": 20,
+        "fields": {
+            "title": "The Two Towers",
+            "cover_url": "covers/the-lord-ring-two-towers.jpg",
+            "description": "The middle novel in The Lord of the Rings\u2014the greatest fantasy epic of all time\u2014which began in The Fellowship of the Ring, and which reaches its magnificent climax in The Return of the King.\r\n\r\nThe Fellowship is scattered. Some are bracing hopelessly for war against the ancient evil of Sauron. Some are contending with the treachery of the wizard Saruman. Only Frodo and Sam are left to take the accursed One Ring, ruler of all the Rings of Power, to be destroyed in Mordor, the dark realm where Sauron is supreme. Their guide is Gollum, deceitful and lust-filled, slave to the corruption of the Ring.",
+            "genre": [ 14 ],
+            "price": 8.99,
+            "publisher": "Random House Publishing Group",
+            "release_date": "1986-08-28T16:00:00Z",
+            "author": [ 5 ]
+        }
+    },
+    {
+        "model": "books.book",
+        "pk": 21,
+        "fields": {
+            "title": "The Return of the King",
+            "cover_url": "covers/the-return-of-the-king.jpg",
+            "description": "As the Shadow of Mordor grows across the land, the Companions of the Ring have become involved in separate adventures. Aragorn, revealed as the hidden heir of the ancient Kings of the West, has joined with the Riders of Rohan against the forces of Isengard, and takes part in the desperate victory of the Hornburg. Merry and Pippin, captured by Orcs, escape into Fangorn Forest and there encounter the Ents. Gandalf has miraculously returned and defeated the evil wizard, Saruman. Sam has left his master for dead after a battle with the giant spider, Shelob; but Frodo is still alive—now in the foul hands of the Orcs. And all the while the armies of the Dark Lord are massing as the One Ring draws ever nearer to the Cracks of Doom.",
+            "genre": [ 14 ],
+            "price": 8.99,
+            "publisher": "Random House Publishing Group",
+            "release_date": "1986-08-28T16:00:00Z",
+            "author": [ 5 ]
+        }
+    },
+    {
+        "model": "books.book",
+        "pk": 22,
+        "fields": {
+            "title": "The Fellowship of the Ring",
+            "cover_url": "covers/the-fellowship-of-the-ring.jpg",
+            "description": "In ancient times the Rings of Power were crafted by the Elven-smiths, and Sauron, the Dark Lord, forged the One Ring, filling it with his own power so that he could rule all others. But the One Ring was taken from him, and though he sought it throughout Middle-earth, it remained lost to him. After many ages it fell into the hands of Bilbo Baggins, as told in The Hobbit. In a sleepy village in the Shire, young Frodo Baggins finds himself faced with an immense task, as his elderly cousin Bilbo entrusts the Ring to his care. Frodo must leave his home and make a perilous journey across Middle-earth to the Cracks of Doom, there to destroy the Ring and foil the Dark Lord in his evil purpose.",
+            "genre": [ 14 ],
+            "price": 8.99,
+            "publisher": "Random House Publishing Group",
+            "release_date": "1986-08-28T16:00:00Z",
+            "author": [ 5 ]
+        }
+    },
+    {
+        "model": "books.book",
+        "pk": 23,
+        "fields": {
+            "title": "Tender is the Night",
+            "cover_url": "covers/tender-is-the-night.jpg",
+            "description": "Published in 1934, Tender Is the Night was one of the most talked-about books of the year. \"It's amazing how excellent much of it is,\" Ernest Hemingway said to Maxwell Perkins. \"I will say now,\" John O'Hara wrote Fitzgerald, \"Tender Is the Night is in the early stages of being my favorite book, even more than This Side of Paradise.",
+            "genre": [ 12 ],
+            "price": 16.24,
+            "publisher": "Scribner",
+            "release_date": "1995-07-01T16:00:00Z",
+            "author": [ 2 ]
+        }
+    },
+    {
+        "model": "books.book",
+        "pk": 24,
+        "fields": {
+            "title": "This Side of Paradise",
+            "cover_url": "covers/this-side-of-paradise.jpg",
+            "description": "This Side of Paradise centres on Amory Blaine, a young Midwesterner who, convinced that he has an exceptionally promising future, attends boarding school and later Princeton University. Amory has an unsuccessful attempt at love, and is shipped overseas to serve in World War I. When Amory returns home, he struggles to find love among the status driven women of New York City",
+            "genre": [ 12 ],
+            "price": 39.95,
+            "publisher": [ 12 ],
+            "release_date": "2016-12-06T16:00:00Z",
+            "author": [ 2 ]
+        }
+    },
+    {
+        "model": "books.book",
+        "pk": 25,
+        "fields": {
+            "title": "I'd Die for You: And Other Lost Stories",
+            "cover_url": "covers/i-die-for-you-and-other-lost-stories.jpg",
+            "description": "I'd Die for You stands apart by shining a light on Fitzgerald's darker, more autobiographical side.. a necessary and welcome addition to his oeuvre….Its value derives largely from the different note struck by these stories, the ways in which they diverge from the work that Fitzgerald is often known for. The collection demonstrates his tremendous range, macabre wit, and above all, his risk-taking, most notably in the emotional core of the stories and the unflinching reality from which they derive.",
+            "genre": [ 12 ],
+            "price": 18.30,
+            "publisher": "Scribner",
+            "release_date": "2017-04-17T16:00:00Z",
+            "author": [ 2 ]
+        }
+    },
+    {
+        "model": "books.book",
+        "pk": 26,
+        "fields": {
+            "title": "The Hobbit",
+            "cover_url": "covers/the-hobbit.jpg",
+            "description": "Bilbo Baggins is a hobbit who enjoys a comfortable, unambitious life, rarely traveling any farther than his pantry or cellar. But his contentment is disturbed when the wizard Gandalf and a company of dwarves arrive on his doorstep one day to whisk him away on an adventure. They have launched a plot to raid the treasure hoard guarded by Smaug the Magnificent, a large and very dangerous dragon. Bilbo reluctantly joins their quest, unaware that on his journey to the Lonely Mountain he will encounter both a magic ring and a frightening creature known as Gollum.",
+            "genre": [ 14 ],
+            "price": 10.63,
+            "publisher": "Mariner Books",
+            "release_date": "1986-08-28T16:00:00Z",
+            "author": [ 5 ]
+        }
+    },
+    {
+        "model": "books.book",
+        "pk": 27,
+        "fields": {
+            "title": "The Silmarillion",
+            "cover_url": "covers/the-silmarillion.jpg",
+            "description": "The story of the creation of the world and of the First Age, this is the ancient drama to which the characters in The Lord of the Rings look back and in whose events some of them, such as Elrond and Galadriel, took part. The three Silmarils were jewels created by Fëanor, most gifted of the Elves. Within them was imprisoned the Light of the Two Trees of Valinor before the Trees themselves were destroyed by Morgoth, the first Dark Lord. Thereafter, the unsullied Light of Valinor lived on only in the Silmarils, but they were seized by Morgoth and set in his crown, which was guarded in the impenetrable fortress of Angband in the north of Middle-earth. The Silmarillion is the history of the rebellion of Fëanor and his kindred against the gods, their exile from Valinor and return to Middle-earth, and their war, hopeless despite all their heroism, against the great Enemy.",
+            "genre": [ 14 ],
+            "price": 19.78,
+            "publisher": "Mariner Books",
+            "release_date": "2014-10-07T16:00:00Z",
+            "author": [ 5 ]
+        }
+    },
+    {
+        "model": "books.review",
+        "pk": 2,
+        "fields": {
+            "book": 1,
+            "author": null,
+            "rating": 4,
+            "comments": null,
+            "created_at": "2017-10-14T15:12:54.686Z"
+        }
+    },
+    {
+        "model": "books.review",
+        "pk": 3,
+        "fields": {
+            "book": 1,
+            "author": null,
+            "rating": 3,
+            "comments": null,
+            "created_at": "2017-10-14T15:13:00.686Z"
+        }
+    },
+    {
+        "model": "books.review",
+        "pk": 4,
+        "fields": {
+            "book": 1,
+            "author": null,
+            "rating": 5,
+            "comments": "I loved re-reading IT all over again. I began remembering as I read and I love how I can always picture in my mind Stephen King books as I read them. the characters are so much fun to learn about as you read the story. So much detail and it makes it even extra special\r\n\r\nNo you do not need to read the book to see the movie however I highly recommend reading this book. It is a wonderfully creepy book to read. Thank you Stephen King: I love your books",
+            "created_at": "2017-10-14T15:13:06.206Z"
+        }
+    },
+    {
+        "model": "books.review",
+        "pk": 5,
+        "fields": {
+            "book": 2,
+            "author": null,
+            "rating": 4,
+            "comments": null,
+            "created_at": "2017-10-15T03:30:41.795Z"
+        }
+    }
+]

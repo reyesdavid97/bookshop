@@ -1,0 +1,18 @@
+{% block content %}
+<table>
+    <tbody>
+        {% for address in addresses_list %}
+            <tr>
+                <td class="col-md-3">
+                    <a href="{% url 'users:addressbound' user.id address.id %}">{{ address.name }}&nbsp;&nbsp;</a>
+                </td>
+                <td class="col-md-1">
+                    <a href="{% url 'users:addressdelete' user.id address.id %}"><i class="fa fa-trash-o" aria-hidden="true"></i></a>
+                </td>
+            </tr>
+        {% empty %}
+            <tr>No shipping addresses registered .</tr>
+        {% endfor %}
+    </tbody>
+</table>
+{% endblock %}

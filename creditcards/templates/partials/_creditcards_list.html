@@ -1,0 +1,19 @@
+{% load bootstrap3 %}
+{% block content %}
+<table>
+    <tbody>
+        {% for creditcard in creditcards_list %}
+            <tr>
+                <td class="col-md-3">
+                    <a href="{% url 'users:creditcardbound' user.id creditcard.id %}">{{ creditcard.name }}&nbsp;&nbsp;</a>
+                </td>
+                <td class="col-md-1">
+                    <a href="{% url 'users:creditcarddelete' user.id creditcard.id %}"><i class="fa fa-trash-o" aria-hidden="true"></i></a>
+                </td>
+            </tr>
+        {% empty %}
+            <tr>No credit cards yet.</tr>
+        {% endfor %}
+    </tbody>
+</table>
+{% endblock %}

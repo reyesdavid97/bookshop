@@ -1,0 +1,36 @@
+{% extends "layout.html" %}
+{% load static %}
+
+{% block content %}
+<div class="container col-sm-8 pt-4">
+  <h1 class="mb-4"> Thanks for your purchases! </h1>
+
+  <h4 class="mb-4">You've purchased</h4>
+  {% for book in books %}
+    <div class="product mb-2 row">
+      <div class="product-image col-xs-12 col-sm-2">
+        <a href="{% url 'books:detail' book.id %}">
+          <img src="{% static book.cover_url %}" class="img-fluid rounded" alt="">
+        </a>
+      </div>
+      <div class="product-details col-xs-12 col-sm-10">
+        <div class="details mt-2">
+          <div class="name d-block">
+            <strong>{{ book.title }}</strong>
+          </div>
+          {% for author in book.author.all|slice:"1" %}
+          <a class="author d-block mb-3" href="#">{{ author.name }}</a>
+          {% endfor %}
+          <a class="btn btn-primary btn-sm" href="{% url 'books:detail' book.id %}">
+            Leave a Review
+          </a>
+        </div>
+      </div>
+    </div>
+    <hr />
+  {% endfor %}
+  <div class="text-right">
+    <a class="btn btn-secondary" href="{% url 'home' %}">Return Home</a>
+  </div>
+</div>
+{% endblock %}

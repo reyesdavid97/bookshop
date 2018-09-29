@@ -1,0 +1,11 @@
+{% load bootstrap3 %}
+{% block content %}
+<form method="POST">
+    {% bootstrap_form form layout='inline' %}
+    {% csrf_token %}
+    {{ form.errors }} {{ form.non_field_errors }}
+    <div class="form-group">
+        <input class="btn btn-block btn-lg btn-primary submit" type="submit" value= "{{ button_text }}">
+    </div>
+</form>
+{% endblock %}
