@@ -11,18 +11,19 @@ from purchases import urls as purchases_urls
 from bookmart.views import HomePageView
 from bookmart.utils import wrong_url
 
+
 urlpatterns = [
-    url(r'^resetpassword/$', auth_views.password_reset,
+    url(r'^resetpassword/$', auth_views.PasswordResetView,
         {'template_name': 'registration/resetpassword.html'}),
-    url(r'^password_reset/done/$', auth_views.password_reset_done,
+    url(r'^password_reset/done/$', auth_views.PasswordChangeDoneView,
         {'template_name': 'registration/resetpassworddone.html'}),
     url(r'^reset/(?P<uidb64>[0-9A-Za-z_\-]+)/(?P<token>[0-9A-Za-z]{1,13}-[0-9A-Za-z]{1,20})/$',
-        auth_views.password_reset_confirm,
+        auth_views.PasswordResetConfirmView,
         {'template_name': 'registration/resetpasswordconfirm.html'}),
-    url(r'^reset/done/$', auth_views.password_reset_complete,
+    url(r'^reset/done/$', auth_views.PasswordResetCompleteView,
         {'template_name': 'registration/resetpasswordcomplete.html'}),
     url(r'^admin/', admin.site.urls),
-    url(r'^users/', include(user_urls, namespace='users')),
+    url(r'^users/', include(user_urls, namespace='users'), name='users'),
     url(r'^carts/', include(cart_urls)),
     url(r'^purchases/', include(purchases_urls)),
     url(r'^books/', include(book_urls)),

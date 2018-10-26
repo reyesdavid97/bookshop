@@ -4,6 +4,7 @@ from addresses import urls as addresses_urls
 from users.forms import SignUpForm
 from . import views
 
+app_name="bookshop"
 urlpatterns = [
     url(r'^(?P<pk>\d+)/$', views.ProfileUpdateView.as_view(), name='profile'),
     url(r'^(?P<user_id>\d+)/creditcards/', include(creditcards_urls)),
