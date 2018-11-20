@@ -1,0 +1,44 @@
+{% extends "cart/shopping_cart.html" %}
+{% load static %}
+<!DOCTYPE html>
+
+{% block content %}
+<html>
+  <head>
+  </head>
+
+  <h1> Items Saved For Later ({{all_saved_books.count}}) <h1>
+
+  <body>
+    <div class"items-saved-for-later">
+      {% for saved_items in all_saved_books %}
+      <div class="product">
+        <div class="product-image">
+          <a href="{% url 'books:detail' saved_items.book.id %}">
+            <img src="{% static book.cover_url %}" class="img-fluid rounded" alt="">
+          </a>
+        </div>
+        <div class="product-details">
+          <div class="details mt-2">
+            <a class="name d-block" href="{% url 'books:detail' saved_items.book.id %}">
+              <strong>{{ saved_items.book.title }}</strong>
+            </a>
+            {% for author in saved_items.book.author.all|slice:"1" %}
+              <a class="author" href="#">{{ author.name }}</a>
+            {% endfor %}
+          </div>
+          <p class="product-description">{{saved_items.book.description}}</p>
+        </div>
+        <div class="product-price">{{saved_items.price}}</div>
+      </div>
+      {% endfor %}
+    </div>
+    </div>
+
+    {% endblock %}
+  </body>
+
+
+
+
+</html>
