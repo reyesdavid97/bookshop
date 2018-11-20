@@ -1,0 +1,69 @@
+{% extends "layout.html" %}
+{% load static %}
+
+{% block head_includes %}
+  <link rel="stylesheet" href="{% static 'css/cart_style.css' %}" />
+  <link rel="stylesheet" href="{% static 'css/save_for_later_section.css' %}" />
+{% endblock %}
+  
+{% block content %}
+<div class="container pt-4">
+  <div class= "cart">
+    <h1 class="mb-3">Confirm Purchases</h1>
+    <div>
+      {% if not cart %}
+      <div class= "No-items-in-cart">
+        <h3> Shopping Cart is Empty. Add items to your cart. </h3>
+      </div>
+      {% endif %}
+      <table class="table">
+        <thead>
+          <th>Item</th>
+          <th>Price</th>
+          <th>Quantity</th>
+          <th>Total</th>
+        </thead>
+        <tbody>
+        {% for item in cart %}
+          {% with book=item.book %}
+            <tr>
+              <td>
+                <div class="col-md-1 product-image">
+                  <a href="{% url 'books:detail' book.id %}">
+                    <img src="{% static book.cover_url %}" class="img-fluid rounded" alt="">
+                  </a>
+                </div>
+                <div class="product-details">
+                  <div class="details mt-2">
+                    <a class="name d-block" href="{% url 'books:detail' book.id %}">
+                      <strong>{{ book.title }}</strong>
+                    </a>
+                    {% for author in book.author.all|slice:"1" %}
+                    <a class="author" href="#">{{ author.name }}</a>
+                    {% endfor %}
+                  </div>
+                </div>
+              </td>
+              <td>{{book.price}}</td>
+              <td>{{item.quantity}}</td>
+              <td>${{ item.total_price }}</td>
+            </tr>
+          {% endwith %}
+        {% endfor %}
+        </tbody>
+      </table>
+      <div class="totals">
+        <div class="totals-item">
+          <label>Grand Total</label>
+          <div class="totals-value" id="cart-subtotal">{{ cart.get_total_price }}</div>
+        </div>
+      </div>
+      <a class="continue btn btn-lg" href="{% url 'carts:detail' %}">Return to Cart</a>
+      <a class="checkout btn btn-lg" href="{% url 'purchases:checkout' %}">Finish Checkout</a>
+    </div>
+  </div>
+</div>
+{% endblock %}
+
+
+</html>
