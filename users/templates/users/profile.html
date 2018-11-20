@@ -1,0 +1,45 @@
+{% extends "layout.html" %} 
+
+{% load static from staticfiles %} 
+{% load bootstrap3 %}
+{% block title %}My profile | {{ block.super}} {% endblock %} 
+{% block content %}
+<div class="container">
+    <br>
+    <h1 class="text-center">Hi {% if user.first_name %} {{ user.first_name }} {% else %} {{ user.user }} {% endif %}</h1>
+    <br>
+    <div class="row justify-content-lg-center">
+        <div class="col-md-3">
+            <img src= {% if form2.instance.image %}
+                        "{{ MEDIA_ROOT }}{{ form2.instance.image.url }}"
+                        {% else %}
+                        "{% static 'img/user.png' %}"
+                        {% endif %}
+                        class="img-fluid rounded">
+            <!--<div class="img-button"><a href="" type ="file" ><i class="fa fa-pencil" aria-hidden="true"></i></a></div>-->
+        </div>
+    </div>
+    <hr>
+    <br>
+    <div class="row">
+        <div class="col-lg-6">
+            <form method="POST" class="form-horizontal" enctype="multipart/form-data">
+                {% csrf_token %}
+                {% bootstrap_form form layout='inline' %}
+                {{ form.errors }} {{ form.non_field_errors }}
+                <div class="divider"></div>
+                {% bootstrap_form form2 layout='inline' %}
+                <input class="btn btn-block btn-lg btn-success submit" type="submit" value="Save changes">
+            </form>
+        </div>
+        <div class="col-lg-4 ml-auto">
+            <h5>more...</h5>
+            <ul style="list-style-type: none">
+                <li><a href="{% url 'users:changepassword' user.id %}" >Change password</a></li>
+                <li><a href="{% url 'users:creditcards' user.id %}" >Credit cards</a></li>
+                <li><a href="{% url 'users:addresses' user.id %}" >Shipping addresses</a></li>
+            </ul>
+        </div>
+    </div>
+</div>
+{% endblock %}

@@ -1,0 +1,25 @@
+{% extends "layout.html" %}
+{% load bootstrap3 %}
+{% block title %}{{ page_title }}{% endblock %}
+{% block content %}
+<div class="container col-md-6">
+    <div class="row mt-5">
+        <div>
+            <h1>{{ question_header }}</h1>
+            <p>{{ question_body }}</p>
+            <form method="POST">
+                {% bootstrap_form form %}
+                {% csrf_token %}
+                <div class="row">
+                    <div class="col-lg-6">
+                        <button class="btn btn-block btn-lg btn-success" type="submit" name="Confirm" value="Confirm">Confirm</button>
+                    </div>
+                    <div class="col-lg-6">
+                        <button class="btn btn-block btn-lg btn-danger" type="submit" name="Cancel" value="Cancel">Cancel</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+{% endblock %}
