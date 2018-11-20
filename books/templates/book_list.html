@@ -1,0 +1,23 @@
+{% extends "layout.html" %}
+{% load static %}
+{% block title %}Books | {{ block.super }}{% endblock %}
+
+{% block content %}
+  {% if all_books %}
+    <div class="container mt-4">
+      <h1 class="mb-4">All Books</h1>
+      <div class="row">
+        {% for book in books %}
+          <div class="col-xs-6 col-sm-6 col-md-3">
+            {% include "partials/book.html" %}
+          </div>
+        {% endfor %}
+      </div>
+    </div>
+  {% else %}
+    <h3>
+      You do not have any books
+    </h3>
+  {% endif %}
+  {% include "pagination.html" with page=books %}
+{% endblock %}

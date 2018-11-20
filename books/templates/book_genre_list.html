@@ -1,0 +1,18 @@
+{% extends "layout.html" %}
+{% load static %}
+{% block title %}Genres | {{ block.super }}{% endblock %}
+
+{% block content %}
+    <div class="container">
+      <h1 class="mb-6" style="padding-top: 25px;padding-bottom: 25px;">All Genres</h1>
+      {% if genres %}
+          <ul>
+              {% for genre in genres %}
+                <li><a href="/books/genres/{{ genre.id }}/">{{ genre.name }}</a></li>
+              {% endfor %}
+          </ul>
+      {% else %}
+          <strong>There are no genres present.</strong>
+      {% endif %}
+    </div>
+{% endblock %}
