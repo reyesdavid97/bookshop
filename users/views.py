@@ -32,8 +32,7 @@ class ProfileUpdateView(UpdateView):
     def get(self, request, *args, **kwargs):
         pk = self.kwargs.get('pk', None)
         self.request = request
-        if self.request.user.is_authenticated(
-        ) and self.request.user.id == int(kwargs['pk']):
+        if self.request.user.is_authenticated and self.request.user.id == int(kwargs['pk']):
             super(ProfileUpdateView, self).get(request, *args, **kwargs)
             user = User.objects.get(pk=pk)
             prfl = Profile.objects.get(pk=pk)
