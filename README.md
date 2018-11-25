@@ -26,10 +26,12 @@ python manage.py dumpdata books > book_seed.json
 ```
 Note that this will override the current seed with whatever your db has. Also make make sure that your book covers are either urls pointed to images in the `static/covers` directory, or are remote urls.
 
-### Packages
+### Required Packages
 
 ```
 pip install django
+pip install django-countries
 pip install django-localflavor
-pip install django-bookstrap3
+pip install django-bootstrap3
+pip install pillow
 ``` 
